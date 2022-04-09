@@ -1,8 +1,8 @@
-from os.path import abspath, join
+from os.path import abspath, dirname, join
 from re import sub
 from xml.dom.minidom import parse, Document, Element
 
-ROOT = abspath('../')
+ROOT = abspath(join(dirname(__file__), '../'))
 
 INPUT_FILE = join(ROOT, 'input.svg')
 OUTPUT_FILE = join(ROOT, 'output.svg')
